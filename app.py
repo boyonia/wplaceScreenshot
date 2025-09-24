@@ -32,9 +32,9 @@ def screenshot():
     finally:
         driver.quit()
 
-schedule.every(15).minutes.do(screenshot)
+schedule.every().hour.do(screenshot)
 
-print("Screenshot every 15 minutes...")
+print("Screenshot every hour...")
 screenshot()
 
 while True:
